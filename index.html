@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio builder</title>
+</head>
+
+<body>
+    <div class="container inp">
+        <span class="changer">View Portfolio</span>
+        <div class="st showd">
+
+            <div class="playe page1">
+                <nav class="pro-nav">
+                    <a onclick="showpage(1)">About</a>
+                    <a onclick="showpage(2)">Skills</a>
+                    <a onclick="showpage(3)">Projects</a>
+                    <a onclick="showpage(4)">Contact</a>
+                </nav>
+                <div class="temp-selection selection1">
+                    <!-- <h1>Select Your Theme</h1> -->
+                    <input type="radio" id="temp1" name="template" value="temp1">
+                    <label for="temp1"><img
+                            src="https://cdn.dribbble.com/userupload/10418687/file/original-389a5e71a2276e797be17ea8ec01ab0a.png?resize=1200x900"
+                            alt=""></label>
+                    <input type="radio" id="temp2" name="template" value="temp2">
+                    <label for="temp2"><img
+                            src="https://cdn.dribbble.com/userupload/16373482/file/original-dc33112b0f967f31c80a832473f5af4e.png?resize=1200x900"
+                            alt=""></label>
+                    <input type="radio" id="temp3" name="template" value="temp3">
+                    <label for="temp3"><img
+                            src="https://cdn.dribbble.com/userupload/16971513/file/original-7b042b9472db939847e27bd15f2d7c5b.png?resize=1200x900"
+                            alt=""></label>
+                    <input type="radio" id="temp4" name="template" value="temp4">
+                    <label for="temp4"><img
+                            src="https://cdn.dribbble.com/userupload/9292403/file/original-e843d3f218efcbc3c465782a29837ea3.png?resize=1200x900"
+                            alt=""></label>
+                    <!-- <input type="radio" id="temp5" name="template" value="temp5">
+                    <label for="temp5"><img
+                            src="https://cdn.dribbble.com/userupload/15027790/file/original-ec0a19ccfded1a1640077d91738715d0.png?resize=1200x900"
+                            alt=""></label> -->
+                </div>
+                <div class="temp-selection selection2">
+                    <label for="name">Enter your first name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <label for="tagline">Enter your tagline</label>
+                    <input type="text" id="tagline" placeholder="Enter your tagline">
+                    <label for="photo">Upload your photo url</label>
+                    <input type="file" id="photo" placeholder="Enter your photo url">
+                </div>
+                <div class="temp-selection selection3">
+                    <!-- Skill 1 -->
+                    <label for="skill-1">Enter your Skill</label>
+                    <input type="text" id="skill-1" placeholder="Enter your skill">
+                    <label for="skill-1-d">Enter your skill description</label>
+                    <input type="text" id="skill-1-d" placeholder="Enter your description">
+                    <span class="cross"></span>
+
+                    <!-- Skill 2 -->
+                    <label for="skill-2">Enter your Skill</label>
+                    <input type="text" id="skill-2" placeholder="Enter your skill">
+                    <label for="skill-2-d">Enter your skill description</label>
+                    <input type="text" id="skill-2-d" placeholder="Enter your description">
+                    <span class="cross"></span>
+
+                    <!-- Skill 3 -->
+                    <label for="skill-3">Enter your Skill</label>
+                    <input type="text" id="skill-3" placeholder="Enter your skill">
+                    <label for="skill-3-d">Enter your skill description</label>
+                    <input type="text" id="skill-3-d" placeholder="Enter your description">
+                    <span class="cross"></span>
+
+                    <!-- Skill 4 -->
+                    <label for="skill-4">Enter your Skill</label>
+                    <input type="text" id="skill-4" placeholder="Enter your skill">
+                    <label for="skill-4-d">Enter your skill description</label>
+                    <input type="text" id="skill-4-d" placeholder="Enter your description">
+                    <span class="cross"></span>
+
+                    <!-- Skill 5 -->
+                    <label for="skill-5">Enter your Skill</label>
+                    <input type="text" id="skill-5" placeholder="Enter your skill">
+                    <label for="skill-5-d">Enter your skill description</label>
+                    <input type="text" id="skill-5-d" placeholder="Enter your description">
+                    <span class="cross"></span>
+
+                    <!-- Skill 6 -->
+                    <label for="skill-6">Enter your Skill</label>
+                    <input type="text" id="skill-6" placeholder="Enter your skill">
+                    <label for="skill-6-d">Enter your skill description</label>
+                    <input type="text" id="skill-6-d" placeholder="Enter your description">
+
+                </div>
+                <div class="temp-selection selection4">
+                    <!-- Project 1 -->
+                    <label for="prj-1">Enter your project title</label>
+                    <input type="text" id="prj-1" placeholder="Enter your project title">
+                    <label for="prj-1-t">Enter your tech stack</label>
+                    <input type="text" id="prj-1-t" placeholder="Enter your tech stack">
+                    <label for="prj-1-d">Enter your project description</label>
+                    <textarea id="prj-1-d" placeholder="Enter your project description"></textarea>
+                    <span class="cross"></span>
+
+                    <!-- Project 2 -->
+                    <label for="prj-2">Enter your project title</label>
+                    <input type="text" id="prj-2" placeholder="Enter your project title">
+                    <label for="prj-2-t">Enter your tech stack</label>
+                    <input type="text" id="prj-2-t" placeholder="Enter your tech stack">
+                    <label for="prj-2-d">Enter your project description</label>
+                    <textarea id="prj-2-d" placeholder="Enter your project description"></textarea>
+                    <span class="cross"></span>
+
+                    <!-- Project 3 -->
+                    <label for="prj-3">Enter your project title</label>
+                    <input type="text" id="prj-3" placeholder="Enter your project title">
+                    <label for="prj-3-t">Enter your tech stack</label>
+                    <input type="text" id="prj-3-t" placeholder="Enter your tech stack">
+                    <label for="prj-3-d">Enter your project description</label>
+                    <textarea id="prj-3-d" placeholder="Enter your project description"></textarea>
+                    <span class="cross"></span>
+                </div>
+                <div class="temp-selection selection5">
+                    <label for="emaill">Email</label>
+                    <input type="email" id="emaill" placeholder="Enter your email">
+                    <label for="phno">Enter your Phone number</label>
+                    <input type="number" id="phno" placeholder="Enter your phone number">
+                    <label for="linkdin">Enter your linkdin profile url</label>
+                    <input type="link" id="linkdin" placeholder="Enter your photo url">
+                </div>
+                <div class="temp-selection selection6">
+                    <div class="down">
+                        <H1>Wowwww! Your Portfolio is ready</H1>
+                        <button id="download">Download</button>
+                        <button id="deploy_code">Deploy</button>
+                        <span id="lru"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="btpn">
+                <button class="next-btn" id="back-btn">Back</button>
+                <button class="next-btn" id="next-btn">Next</button>
+            </div>
+        </div>
+        <div class="st show">
+            <div class="page9"></div>
+        </div>
+        <script src="app.js"></script>
+        <script src="templetee.js"></script>
+    </body>
+</html>
